@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::get('', function(){
+    return redirect('client');
+});
 
 //client crud
 Route::resource('client', \App\Http\Controllers\ClientController::class);
